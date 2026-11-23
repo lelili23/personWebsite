@@ -140,17 +140,7 @@
         <span class="num">01 — Music recommendation service</span>
         <h3><a href="https://github.com/lelili23/playlist-engine" target="_blank" rel="noopener">Playlist Engine</a></h3>
         <p>A music recommendation service that turns ideas like "rainy day study" into playlists, built on a C++20 vector-search engine with a Go gateway and web UI.</p>
-        <details class="more">
-          <summary>Highlights</summary>
-          <ul class="highlights">
-            <li>Implemented the HNSW nearest-neighbor algorithm from its research paper with no libraries: 100% recall while searching 17x faster than brute force across 78,760 songs (99x at 1M).</li>
-            <li>Built a multithreaded HTTP server from raw POSIX sockets with a bounded thread pool and 503 backpressure: ~2,300 requests/sec with zero errors under load.</li>
-            <li>Parallel index build and on-disk persistence, so the server starts in 0.37 s.</li>
-            <li>Go gateway turns a playlist idea into target audio features and returns a playlist, in a web UI whose colors change with the vibe and play songs inline with Spotify.</li>
-            <li>73 C++ tests (clean under AddressSanitizer, UBSan, ThreadSanitizer) and 17 Go tests, run in CI on every pull request.</li>
-          </ul>
-        </details>
-        <div class="tags"><span>C++20</span><span>GO</span><span>HNSW</span><span>POSIX SOCKETS</span><span>MULTITHREADING</span><span>GITHUB ACTIONS</span></div>
+        <div class="tags"><span>C++</span><span>GO</span><span>HNSW</span></div>
         <div class="buttons">
           <a class="btn" href="https://github.com/lelili23/playlist-engine" target="_blank" rel="noopener">Link ↗</a>
         </div>
